@@ -1,0 +1,23 @@
+_id: req_e4720a5b73474197b7e737e8c42ab381
+type: Request
+parentId: fld_0a8bc172c775490f89bdf7bd8ad02cc9
+modified: 1611762937732
+created: 1610657620979
+url: "{{ _.base_url }}/sennin/deleteVideo/600071a0a2888025046bb9fd"
+name: Delete Video
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTA1Nzg1MzIsImV4cCI6MTYxMDY2NDkzMiwic3ViIjoiMzkxOTZhNzgtNjI4MS00NDg5LWJiMWYtMGVkYWNkYTA5NzMwIn0.lT7FOvrHvt-gYHJUTiwTZboVI8fwHActCB69CGlCnYg
+metaSortKey: -1610734810119
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

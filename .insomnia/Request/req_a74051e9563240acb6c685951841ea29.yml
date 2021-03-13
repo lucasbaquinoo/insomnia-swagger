@@ -1,0 +1,24 @@
+_id: req_a74051e9563240acb6c685951841ea29
+type: Request
+parentId: fld_76558ae2ce5f4fd992e95c426dcd7fa4
+modified: 1614274541085
+created: 1608731465038
+url: "{{ _.base_url }}/admin/class/eca1674a-d17d-48c2-af3c-453c97bcee82"
+name: List All Classes
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608728941230
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,10 @@
+_id: fld_wrk_a395de3ad290481583b4d87d02bf32d68af07801
+type: RequestGroup
+parentId: wrk_a395de3ad290481583b4d87d02bf32d6
+modified: 1608854836526
+created: 1608854836526
+name: schools
+description: Access to Petstore orders
+environment: {}
+environmentPropertyOrder: null
+metaSortKey: -1608854836526

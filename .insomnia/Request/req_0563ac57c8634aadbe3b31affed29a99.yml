@@ -1,0 +1,36 @@
+_id: req_0563ac57c8634aadbe3b31affed29a99
+type: Request
+parentId: fld_08acda3b47184579b20e185517f6b79b
+modified: 1614193024429
+created: 1614107276568
+url: "{{ _.base_url }}/teacher/avatar"
+name: Update avatar
+description: ""
+method: PATCH
+body:
+  mimeType: multipart/form-data
+  params:
+    - name: avatar
+      value: ""
+      description: ""
+      id: pair_e976ebda34454ee484f88df334ed11f9
+      type: file
+      fileName: C:\Users\lucas\Pictures\3D Gray White Honeycombs Brick wall Stairway
+        Decoration Adhesive Stair Riser Panels Stairs Risers St.jpg
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_69a7772bf2d349fbab76ebee58d5d3ca
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_5cebc0250a3b4710ba402e09af51f456',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1614107276568
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

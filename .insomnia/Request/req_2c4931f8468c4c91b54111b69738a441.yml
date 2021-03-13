@@ -1,0 +1,31 @@
+_id: req_2c4931f8468c4c91b54111b69738a441
+type: Request
+parentId: fld_b7c3d462290e44dd8a9965c7a2e2732d
+modified: 1612803739041
+created: 1610221679945
+url: "{{ _.base_url }}/sennin"
+name: Create Sennin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Lucas Batista",
+    	"email": "lucas.aquino@picode.com.br",
+    	"password": "123456"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_71aa4d3fe4984c9bb029810500f8ad4d
+authentication: {}
+metaSortKey: -1610221679945
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

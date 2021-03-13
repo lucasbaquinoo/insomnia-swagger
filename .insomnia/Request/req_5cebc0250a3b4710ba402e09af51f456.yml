@@ -1,0 +1,30 @@
+_id: req_5cebc0250a3b4710ba402e09af51f456
+type: Request
+parentId: fld_402de5eafa4c48ddbae83fb852fedab0
+modified: 1614107656736
+created: 1614018719814
+url: "{{ _.base_url }}/teacher/sessions"
+name: Login teacher
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "lucasbaquino1@icloud.com",
+    	"password": "123456"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_4efebc9be9274c59b4a7d3e97dc35f94
+authentication: {}
+metaSortKey: -1614018719814
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

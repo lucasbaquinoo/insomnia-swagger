@@ -1,0 +1,21 @@
+_id: req_b717a3860114404e9a7f3329b9abe769
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1611765121351
+created: 1611765113797
+url: "{{ _.base_url }}/admin/findAlgorithm/60101df6e42114397c00ffbb"
+name: Find algorithm by id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1611764294838
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

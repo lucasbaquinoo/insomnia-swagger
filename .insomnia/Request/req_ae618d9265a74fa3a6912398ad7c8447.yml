@@ -1,0 +1,32 @@
+_id: req_ae618d9265a74fa3a6912398ad7c8447
+type: Request
+parentId: fld_0735d62c728340c9aa238925da879044
+modified: 1611924400476
+created: 1611924394454
+url: "{{ _.base_url }}/students/maps"
+name: List maps
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: grade
+    value: "6"
+    description: ""
+    id: pair_82b46af7c1f14b259b033188aaaf5d2e
+  - name: reference
+    value: "1"
+    description: ""
+    id: pair_550a642fb2ef44c6bffeb182ac213bb3
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1609395279180.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

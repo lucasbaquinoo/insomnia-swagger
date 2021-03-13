@@ -1,0 +1,36 @@
+_id: req_11dd16cea22e412a982e9608a98b55f3
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1613155036440
+created: 1611763545631
+url: "{{ _.base_url }}/admin/challenge"
+name: Create a challenge
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"reference": 1,
+    	"type": "quizzes",
+    	"quantity": 3,
+    	"start_at": "2021-01-07",
+    	"end_at": "2021-01-12"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_30ff81dde01b4ebfbac09a790387c37f
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1611763545631
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

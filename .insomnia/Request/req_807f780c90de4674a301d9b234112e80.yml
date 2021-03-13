@@ -1,0 +1,29 @@
+_id: req_807f780c90de4674a301d9b234112e80
+type: Request
+parentId: fld_e190103c5c224a5392548721669feecb
+modified: 1610894259623
+created: 1610044994474
+url: "{{ _.base_url }}/students/reset/2c4e6134-b4af-4bc3-8938-3bd621ad4365"
+name: Reset password
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"password": "novasenha"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7a0e07989405402baf4a9a0e9fee148c
+authentication: {}
+metaSortKey: -1610048146247.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

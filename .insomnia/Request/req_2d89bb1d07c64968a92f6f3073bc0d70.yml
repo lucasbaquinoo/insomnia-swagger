@@ -1,0 +1,33 @@
+_id: req_2d89bb1d07c64968a92f6f3073bc0d70
+type: Request
+parentId: fld_e190103c5c224a5392548721669feecb
+modified: 1610894485091
+created: 1610049832459
+url: "{{ _.base_url }}/students"
+name: Update password
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"old_password": "novasenha",
+    	"password": "123456"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c9cfa4df311e4b0fb15dcb3e3c8cb4a8
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1610049832551
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

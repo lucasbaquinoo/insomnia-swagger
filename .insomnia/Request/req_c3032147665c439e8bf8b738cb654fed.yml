@@ -1,0 +1,43 @@
+_id: req_c3032147665c439e8bf8b738cb654fed
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1611755556843
+created: 1610035912966
+url: "{{ _.base_url }}/admin/newQuizz"
+name: Create Quizz
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"questionText": "10 ÷ 2",
+    	"answerOptions": [
+    		{"answerText": "4", "isCorrect": false},
+    		{"answerText": "8", "isCorrect": false},
+    		{"answerText": "5", "isCorrect": true},
+    		{"answerText": "12", "isCorrect": false}
+    	],
+    	"grade": 6,
+    	"reference": 3,
+    	"video_reference": "222222",
+    	"competence": ["competence1", "competence2"],
+    	"tags": ["tag1", "tag2"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_246cbbd036894e87b2e36769da0e6bb4
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608651412103.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

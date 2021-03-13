@@ -1,0 +1,34 @@
+_id: req_2af9cfbdb72346c9b1f047fa1fd0a25f
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1610891301346
+created: 1610232213867
+url: "{{ _.base_url }}/admin/tags"
+name: Create Tags
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    [
+    	{ "text": "tag4" },
+    	{ "text": "tag5" },
+    	{ "text": "tag6" }
+    ]
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8f42c6a443864f25941b6d9452c628eb
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608651412153.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

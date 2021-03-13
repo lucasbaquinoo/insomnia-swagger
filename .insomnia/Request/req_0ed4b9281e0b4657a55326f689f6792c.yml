@@ -1,0 +1,24 @@
+_id: req_0ed4b9281e0b4657a55326f689f6792c
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1613151627791
+created: 1613149092279
+url: "{{ _.base_url }}/admin/deleteQuizz/6026bd8629380e1004dc3967"
+name: Delete Quizz
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1613149092280
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

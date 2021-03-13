@@ -1,0 +1,23 @@
+_id: req_cb7c9ca7b73d47e0b756aa0c7f24ff4a
+type: Request
+parentId: fld_d6eaebe463324c8fb9023ecfe661a436
+modified: 1611763275509
+created: 1610663135016
+url: "{{ _.base_url }}/sennin/deleteClass/5fff48b145e17c3b7c70df51"
+name: Delete Class
+description: ""
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTA1Nzg1MzIsImV4cCI6MTYxMDY2NDkzMiwic3ViIjoiMzkxOTZhNzgtNjI4MS00NDg5LWJiMWYtMGVkYWNkYTA5NzMwIn0.lT7FOvrHvt-gYHJUTiwTZboVI8fwHActCB69CGlCnYg
+metaSortKey: -1610641890939.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

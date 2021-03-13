@@ -1,0 +1,24 @@
+_id: req_3f8989bbe3194c21b61780151b7d0011
+type: Request
+parentId: fld_2cd6690082744dee9bf35dcb9fff9835
+modified: 1614274425611
+created: 1614274356397
+url: "{{ _.base_url }}/teacher/classes"
+name: List all classes
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_5cebc0250a3b4710ba402e09af51f456',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1614274356397
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

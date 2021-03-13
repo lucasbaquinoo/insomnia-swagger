@@ -1,0 +1,30 @@
+_id: req_e4fb0315ea7948cd8b98d733a95d0c42
+type: Request
+parentId: fld_a0aaf65678f74fe9ae83388d094f3dcd
+modified: 1612206418793
+created: 1612205823076
+url: ""
+name: teacher
+description: |-
+  - name
+  - email
+  - password
+  - disciplina (Quais disciplinas você leciona?)
+
+  Criação de questão 
+  - relacionar o id do professor
+  - quantidades de desafios inseridos
+  - quantidades de desafios feitos com a turma
+method: HEAD
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1612205823076
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

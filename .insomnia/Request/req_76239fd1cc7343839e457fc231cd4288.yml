@@ -1,0 +1,32 @@
+_id: req_76239fd1cc7343839e457fc231cd4288
+type: Request
+parentId: fld_402de5eafa4c48ddbae83fb852fedab0
+modified: 1614107637830
+created: 1614018401699
+url: "{{ _.base_url }}/teacher/create"
+name: Create Teacher
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Lucas Professor",
+    	"email": "lucasbaquino1@icloud.com",
+    	"password": "123456",
+    	"subjects": ["matematica", "portugues"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_1bcbd9f76f3047b594a4ed692af3b7e7
+authentication: {}
+metaSortKey: -1614018401699
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

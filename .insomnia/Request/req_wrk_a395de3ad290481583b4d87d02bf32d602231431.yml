@@ -1,0 +1,21 @@
+_id: req_wrk_a395de3ad290481583b4d87d02bf32d602231431
+type: Request
+parentId: wrk_a395de3ad290481583b4d87d02bf32d6
+modified: 1615304259587
+created: 1615304259587
+url: "{{ base_url }}/users"
+name: Returns a list of users.
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1615304259587
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

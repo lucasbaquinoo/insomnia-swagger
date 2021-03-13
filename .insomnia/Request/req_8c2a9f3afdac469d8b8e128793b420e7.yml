@@ -1,0 +1,36 @@
+_id: req_8c2a9f3afdac469d8b8e128793b420e7
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1615085275654
+created: 1614887598861
+url: "{{ _.base_url }}/admin/videoUpload"
+name: Upload video
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - name: video
+      value: ""
+      description: ""
+      id: pair_1f5b4431876548868bb847d9c23a853d
+      type: file
+      fileName: C:\Users\lucas\Videos\Captures\Pi Code e mais 3 páginas - Pessoal —
+        Microsoft​ Edge 2021-01-21 18-43-13.mp4
+parameters: []
+headers:
+  - name: Content-Type
+    value: multipart/form-data
+    id: pair_f25707eda3c7403595514d0a214a541a
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1614141776855
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

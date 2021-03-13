@@ -1,0 +1,33 @@
+_id: req_69b95df9a60c4e5188415305ba5de514
+type: Request
+parentId: fld_14cd1c96a3ba46df861118ac209fcd20
+modified: 1614189453969
+created: 1604947140134
+url: "{{ base_url }}/students/create"
+name: Create Student
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Lucas Aquino",
+    	"password": "123456",
+    	"classCode": 489353,
+    	"birth_date": "1999-07-15",
+    	"parent": "Maria"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_dcdf020b1dc14d7b8938515e02d2b9e4
+authentication: {}
+metaSortKey: -1608744020965.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

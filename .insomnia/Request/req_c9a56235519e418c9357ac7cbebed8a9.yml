@@ -1,0 +1,30 @@
+_id: req_c9a56235519e418c9357ac7cbebed8a9
+type: Request
+parentId: fld_14cd1c96a3ba46df861118ac209fcd20
+modified: 1613153405298
+created: 1608744020928
+url: "{{ _.base_url }}/students"
+name: Login Student
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "lucasaquino@picode.com.br",
+    	"password": "123456"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7a0e07989405402baf4a9a0e9fee148c
+authentication: {}
+metaSortKey: -1608744020928
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

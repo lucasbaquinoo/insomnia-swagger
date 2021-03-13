@@ -1,0 +1,24 @@
+_id: req_5dac4d65e3b84355976d0ba49fe9d68a
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1610891297175
+created: 1610238025772
+url: "{{ _.base_url }}/admin/allTags"
+name: Find all Tags
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608651412203.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

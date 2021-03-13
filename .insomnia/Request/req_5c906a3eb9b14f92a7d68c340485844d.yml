@@ -1,0 +1,37 @@
+_id: req_5c906a3eb9b14f92a7d68c340485844d
+type: Request
+parentId: fld_76558ae2ce5f4fd992e95c426dcd7fa4
+modified: 1614274775469
+created: 1608654595904
+url: "{{ _.base_url }}/admin/class/eca1674a-d17d-48c2-af3c-453c97bcee82"
+name: Create classes
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Turma π 2",
+    	"grade": 8
+    }
+parameters:
+  - name: ""
+    value: ""
+    description: ""
+    id: pair_12de34c4bee04d968748575853b70eff
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_246cbbd036894e87b2e36769da0e6bb4
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608728941255
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

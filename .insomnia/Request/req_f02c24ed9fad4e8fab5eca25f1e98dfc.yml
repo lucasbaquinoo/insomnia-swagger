@@ -1,0 +1,32 @@
+_id: req_f02c24ed9fad4e8fab5eca25f1e98dfc
+type: Request
+parentId: fld_dab5f0e3d8f441aea65774385cdd36f4
+modified: 1611762838637
+created: 1611686686055
+url: "{{ _.base_url }}/sennin/giveFullAccess"
+name: Change Admin
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "email_existente@example.com"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_98319d7cd62746098b9f021818b0ee2f
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_51164f61d6994878b0ae0fc564cb6e09',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1611686686055
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

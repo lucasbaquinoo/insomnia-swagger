@@ -1,0 +1,24 @@
+_id: req_21b93df42b99435ca537f094711276b9
+type: Request
+parentId: fld_e190103c5c224a5392548721669feecb
+modified: 1610891515468
+created: 1610472964776
+url: "{{ _.base_url }}/students/avatars"
+name: List Avatars
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1610048567823.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

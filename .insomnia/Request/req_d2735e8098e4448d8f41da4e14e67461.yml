@@ -1,0 +1,31 @@
+_id: req_d2735e8098e4448d8f41da4e14e67461
+type: Request
+parentId: fld_040c1b8e94b04d37aedcc87f0c8f195c
+modified: 1613149601030
+created: 1608651232167
+url: "{{ _.base_url }}/admin"
+name: Create Admin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Lucas Batista",
+    	"email": "lucasi@picode.com.br",
+    	"password": "123456"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_75b85b39937a414db1f1649dc6ac7666
+authentication: {}
+metaSortKey: -1608651397961
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

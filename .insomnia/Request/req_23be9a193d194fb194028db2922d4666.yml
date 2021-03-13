@@ -1,0 +1,30 @@
+_id: req_23be9a193d194fb194028db2922d4666
+type: Request
+parentId: fld_040c1b8e94b04d37aedcc87f0c8f195c
+modified: 1613149608723
+created: 1608651397911
+url: "{{ _.base_url }}/admin/sessions"
+name: Sessions Admin
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "lucasi@picode.com.br",
+    	"password": "123456"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_db7eb7485c7149d1ad00acf4b7beebe6
+authentication: {}
+metaSortKey: -1608651397911
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,43 @@
+_id: req_96cdbca3319e4bbfacd88c1747bc5307
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1611924445532
+created: 1611849046279
+url: "{{ _.base_url }}/admin/newMap"
+name: Create Map
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"title": "Ordene os blocos",
+    	"description": "Coloque na ordem correta para fazer um bolo",
+    	"initial_position": 8,
+    	"final_position": 2,
+    	"initial_value": -5,
+    	"number_of_columns": 12,
+    	"video_reference": "456585",
+    	"sequence": [{"text": "Ler a receita"}, {"text": "Pegar os ingredientes"}, {"text": "Seguir a receita"}, {"text": "Levar ao forno"}],
+    	"grade": 6,
+    	"reference": 1,
+    	"competence": ["competence1", "competence2"],
+    	"tags": ["tag1", "tag2"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_246cbbd036894e87b2e36769da0e6bb4
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608651405007.1875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

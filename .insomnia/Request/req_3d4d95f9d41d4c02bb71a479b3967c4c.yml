@@ -1,0 +1,36 @@
+_id: req_3d4d95f9d41d4c02bb71a479b3967c4c
+type: Request
+parentId: fld_358bc0cbdbc2404b8f684fb9089c3b72
+modified: 1611083860900
+created: 1610380571437
+url: "{{ _.base_url }}/admin/newVideo"
+name: Post video
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"url_code": 137589932,
+    	"title": "Title here2",
+    	"description": "Description goes here2",
+    	"duration": 2000,
+    	"tags": ["robotic"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_f294c1b7816d44a7b4a234afe0c46b66
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1610380571437
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

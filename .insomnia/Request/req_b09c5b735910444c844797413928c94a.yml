@@ -1,0 +1,28 @@
+_id: req_b09c5b735910444c844797413928c94a
+type: Request
+parentId: fld_2cd6690082744dee9bf35dcb9fff9835
+modified: 1614277963791
+created: 1614274649826
+url: "{{ _.base_url }}/teacher/classes"
+name: Remove classes
+description: ""
+method: PUT
+body: {}
+parameters:
+  - name: class_id
+    value: dccfc159-5491-48b7-a237-1c9ac9186b83
+    description: ""
+    id: pair_b1cd60a61b4d499d89f43289a17205b2
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_5cebc0250a3b4710ba402e09af51f456',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1614274412249
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

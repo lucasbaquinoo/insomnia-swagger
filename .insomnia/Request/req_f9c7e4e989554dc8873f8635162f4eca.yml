@@ -1,0 +1,29 @@
+_id: req_f9c7e4e989554dc8873f8635162f4eca
+type: Request
+parentId: fld_e190103c5c224a5392548721669feecb
+modified: 1613157914130
+created: 1608744117902
+url: "{{ _.base_url }}/students/rank"
+name: List students
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: class_id
+    value: d8821d84-3ddb-42fe-b268-c164bde0df2b
+    description: ""
+    id: pair_43cac6f12e214309a80a7a0b4bfe0dfe
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+  disabled: false
+metaSortKey: -1610048778611.3125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

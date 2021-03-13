@@ -1,0 +1,39 @@
+_id: req_9f9e2d44ac9e446288f34ec9fe73006e
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1611755563417
+created: 1610041398943
+url: "{{ _.base_url }}/admin/newAlgorithm"
+name: Create Algorithm
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"title": "Ordene os blocos",
+    	"description": "Coloque na ordem correta para fazer um bolo",
+    	"video_reference": "456585",
+    	"sequence": [{"text": "Ler a receita"}, {"text": "Pegar os ingredientes"}, {"text": "Seguir a receita"}, {"text": "Levar ao forno"}],
+    	"grade": 6,
+    	"reference": 2,
+    	"competence": ["competence1", "competence2"],
+    	"tags": ["tag1", "tag2"]
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_246cbbd036894e87b2e36769da0e6bb4
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608651412053.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

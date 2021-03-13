@@ -1,0 +1,29 @@
+_id: req_2253be1a6ecd4defad41b7a985928736
+type: Request
+parentId: fld_14cd1c96a3ba46df861118ac209fcd20
+modified: 1610480146754
+created: 1610044892801
+url: "{{ _.base_url }}/students/forgot"
+name: Forgot password
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "lucasaquino2@picode.com.br"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_7a0e07989405402baf4a9a0e9fee148c
+authentication: {}
+metaSortKey: -1608744020953
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

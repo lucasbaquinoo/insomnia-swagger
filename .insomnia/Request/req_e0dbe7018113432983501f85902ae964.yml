@@ -1,0 +1,35 @@
+_id: req_e0dbe7018113432983501f85902ae964
+type: Request
+parentId: fld_0a8bc172c775490f89bdf7bd8ad02cc9
+modified: 1612192694482
+created: 1610226068435
+url: "{{ _.base_url }}/sennin/competence"
+name: Create Competence BNCC
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"code": "EF09MA04",
+    	"description": "Escolher e construir o gráfico mais adequado (colunas, setores, linhas), com ou sem uso de planilhas eletrônicas, para apresentar um determinado conjunto de dados, destacando aspectos como as medidas de tendência central.",
+    	"goal": "Planejamento e execução de pesquisa amostral e apresentação de relatório",
+    	"year_reference": 9
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_8f42c6a443864f25941b6d9452c628eb
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_51164f61d6994878b0ae0fc564cb6e09',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1610734810128.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

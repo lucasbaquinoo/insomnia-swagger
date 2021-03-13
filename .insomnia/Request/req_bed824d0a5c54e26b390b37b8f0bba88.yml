@@ -1,0 +1,24 @@
+_id: req_bed824d0a5c54e26b390b37b8f0bba88
+type: Request
+parentId: fld_6cee194bd9b74d7da041411a2b773d01
+modified: 1611764826315
+created: 1611762768639
+url: "{{ _.base_url }}/students/video/879e95fb-5fd5-4ccd-a2bd-14303d8c17b1"
+name: List video by id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1610688727733.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

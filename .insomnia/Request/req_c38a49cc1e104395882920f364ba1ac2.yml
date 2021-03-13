@@ -1,0 +1,32 @@
+_id: req_c38a49cc1e104395882920f364ba1ac2
+type: Request
+parentId: fld_0735d62c728340c9aa238925da879044
+modified: 1610891481195
+created: 1610373404672
+url: "{{ _.base_url }}/students/algorithms"
+name: List algorthms
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: grade
+    value: "6"
+    description: ""
+    id: pair_82b46af7c1f14b259b033188aaaf5d2e
+  - name: reference
+    value: "1"
+    description: ""
+    id: pair_550a642fb2ef44c6bffeb182ac213bb3
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1609395279205.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

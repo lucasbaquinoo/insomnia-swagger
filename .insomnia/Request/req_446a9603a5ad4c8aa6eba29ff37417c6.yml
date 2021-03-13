@@ -1,0 +1,28 @@
+_id: req_446a9603a5ad4c8aa6eba29ff37417c6
+type: Request
+parentId: fld_358bc0cbdbc2404b8f684fb9089c3b72
+modified: 1610891329065
+created: 1610382540657
+url: "{{ _.base_url }}/admin/videos"
+name: List videos by tag
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: tag
+    value: trigonometria
+    description: ""
+    id: pair_7835463973134cd38d8f6a2a216ee2e6
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1610264694185.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

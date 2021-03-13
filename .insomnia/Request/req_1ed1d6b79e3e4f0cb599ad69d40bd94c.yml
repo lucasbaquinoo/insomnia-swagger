@@ -1,0 +1,28 @@
+_id: req_1ed1d6b79e3e4f0cb599ad69d40bd94c
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1614281149531
+created: 1610296521563
+url: "{{ _.base_url }}/admin/filterChallenges"
+name: List challenges by type
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: type
+    value: algorithm
+    description: ""
+    id: pair_12de34c4bee04d968748575853b70eff
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_23be9a193d194fb194028db2922d4666',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1608651412078.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

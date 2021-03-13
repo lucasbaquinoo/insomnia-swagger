@@ -1,0 +1,34 @@
+_id: req_51164f61d6994878b0ae0fc564cb6e09
+type: Request
+parentId: fld_b7c3d462290e44dd8a9965c7a2e2732d
+modified: 1612804279553
+created: 1610221864116
+url: "{{ _.base_url }}/sennin/sessions"
+name: Sennin Login
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"email": "lucas.aquino@picode.com.br",
+    	"password": "123456"
+    }
+parameters:
+  - name: ""
+    value: ""
+    description: ""
+    id: pair_8a2ab55bf2594690a27cee708e46532a
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_71aa4d3fe4984c9bb029810500f8ad4d
+authentication: {}
+metaSortKey: -1610135756248
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

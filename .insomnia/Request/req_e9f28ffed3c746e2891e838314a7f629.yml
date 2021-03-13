@@ -1,0 +1,24 @@
+_id: req_e9f28ffed3c746e2891e838314a7f629
+type: Request
+parentId: fld_16a22e26f7554750867f2e14f1456869
+modified: 1612207651993
+created: 1611762273874
+url: "{{ _.base_url }}/students/lessons"
+name: List Lessons
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1611762273925
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

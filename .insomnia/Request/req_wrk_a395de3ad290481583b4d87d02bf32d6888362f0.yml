@@ -1,0 +1,21 @@
+_id: req_wrk_a395de3ad290481583b4d87d02bf32d6888362f0
+type: Request
+parentId: fld_wrk_a395de3ad290481583b4d87d02bf32d6327a473b
+modified: 1615588934676
+created: 1615588934676
+url: "{{ base_url }}/students"
+name: Returns a list of users.
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1615588934676
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

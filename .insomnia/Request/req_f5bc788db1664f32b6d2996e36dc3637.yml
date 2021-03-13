@@ -1,0 +1,21 @@
+_id: req_f5bc788db1664f32b6d2996e36dc3637
+type: Request
+parentId: fld_67c162d7d8c04f6d84331cbb159ab418
+modified: 1611765081828
+created: 1611765043986
+url: "{{ _.base_url }}/admin/findQuizz/60101df6e42114397c00ffbb"
+name: Find quizz by id
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1611765044045
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_e156a12da87748718a6661f82062324f
+type: Request
+parentId: fld_0735d62c728340c9aa238925da879044
+modified: 1613156085101
+created: 1610741600270
+url: "{{ _.base_url }}/students/listTrail"
+name: List Trail
+description: ""
+method: GET
+body: {}
+parameters:
+  - name: page
+    value: "1"
+    description: ""
+    id: pair_5fac0dc4ba9641fb85b07d6737e26eff
+  - name: limit
+    value: "3"
+    description: ""
+    id: pair_8d58a45b283b497c9776eb993cdacb56
+headers: []
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_c9a56235519e418c9357ac7cbebed8a9',
+    'b64::JC50b2tlbg==::46b', 'no-history', 60 %}"
+metaSortKey: -1610741600325
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

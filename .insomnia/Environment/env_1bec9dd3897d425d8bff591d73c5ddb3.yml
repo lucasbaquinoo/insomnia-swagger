@@ -1,0 +1,14 @@
+_id: env_1bec9dd3897d425d8bff591d73c5ddb3
+type: Environment
+parentId: env_a6da56012522ac078a85e36fd3d8303004bae1d6
+modified: 1612895362061
+created: 1609252917348
+name: prod
+data:
+  base_url: https://api.picode.com.br
+dataPropertyOrder:
+  "&":
+    - base_url
+color: "#63e552"
+isPrivate: false
+metaSortKey: 1605160896114
