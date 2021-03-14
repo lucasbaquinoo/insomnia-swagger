@@ -1,7 +1,7 @@
 _id: spc_6ec581fcd3dd42caa4f23225e605b17b
 type: ApiSpec
 parentId: wrk_a395de3ad290481583b4d87d02bf32d6
-modified: 1615672951049
+modified: 1615747047575
 created: 1604947051062
 fileName: Pi Code
 contents: "    openapi: 3.0.0
@@ -41,13 +41,27 @@ contents: "    openapi: 3.0.0
 
   \    paths:
 
-  \      /students:
+  \      /students/create:
 
-  \        get:
+  \        post:
 
-  \          summary: Returns a list of users.
+  \          summary: Create a new student access
 
-  \          description: Optional extended description in CommonMark or HTML.
+  \         \ 
+
+  \          requestBody:
+
+  \              description: Optional description in *Markdown*
+
+  \              required: true
+
+  \              content:
+
+  \                application/json:
+
+  \                  schema:
+
+  \                    $ref: '#/components/schemas/CreateStudentModel'
 
   \          tags:
 
@@ -55,67 +69,463 @@ contents: "    openapi: 3.0.0
 
   \          responses:
 
-  \            '200':    # status code
+  \            '200':
 
-  \              description: A JSON array of user names
+  \              description: A User object
 
   \              content:
 
   \                application/json:
 
-  \                  schema:\ 
+  \                  schema:
 
-  \                    type: array
+  \                    type: object
 
-  \                    items:\ 
+  \                    properties:
 
-  \                      type: string
+  \                      id:
+
+  \                        type: string
+
+  \                        format: uuid
+
+  \                        description: The user ID.
+
+  \                      name:
+
+  \                        type: string
+
+  \                        description: The user name.
+
+  \                      email:
+
+  \                        type: string
+
+  \                        format: email
+
+  \                      class_id:
+
+  \                        type: string
+
+  \                        format: uuid
+
+  \                      birth_date:
+
+  \                        type: string
+
+  \                        format: date-time
+
+  \                      points:
+
+  \                        type: integer
+
+  \                      challenges_done:
+
+  \                        type: integer
+
+  \                        description: Show the actual trail's challenges the
+  student are.
+
+  \                      right_challenges:
+
+  \                        type: integer
+
+  \                      wrong_challenges:
+
+  \                        type: integer
+
+  \                      attemps:\ 
+
+  \                        type: integer
+
+  \                      parent:
+
+  \                        type: string
+
+  \                      avatar:
+
+  \                        type: string
+
+  \                      time_used:
+
+  \                        type: object
+
+  \                        properties:
+
+  \                          videos:
+
+  \                            type: integer
+
+  \                            description: Time spend with videos
+
+  \                          challenges:
+
+  \                            type: integer
+
+  \                            description: Time spend doing challenges
+
+  \                          pratice:
+
+  \                            type: integer
+
+  \                            description: Time spend doing anything on
+  pratice screen
+
+  \                      created_at:
+
+  \                        type: string
+
+  \                        format: date-time
+
+  \                      updated_at:
+
+  \                        type: string
+
+  \                        format: date-time
+
+  \      /students/class/{classCode}:
+
+  \        get:
+
+  \          summary: A quickly validation for class code
+
+  \          parameters:
+
+  \            - in: path
+
+  \              name: classCode
+
+  \              schema:
+
+  \                type: integer
+
+  \              required: true
+
+  \              description: A unique code by class
+
+  \          tags:
+
+  \            - students
+
+  \          responses:
+
+  \            '200':
+
+  \              description: Information from class and its school
+
+  \              content:
+
+  \                application/json:
+
+  \                  schema:
+
+  \                    type: object
+
+  \                    properties:
+
+  \                      classes:
+
+  \                        type: object
+
+  \                        properties:
+
+  \                          id:
+
+  \                            type: string
+
+  \                            format: uuid
+
+  \                          name:
+
+  \                            type: string
+
+  \                            example: \"6º ano\"
+
+  \                          school_id:
+
+  \                            type: string
+
+  \                            format: uuid
+
+  \                            description: The id of school which this class
+  belongs
+
+  \                          classCode:
+
+  \                            type: integer
+
+  \                            example: 654859
+
+  \                            description: This code is unique for each class
+
+  \                          grade:
+
+  \                            type: integer
+
+  \                            example: 6
+
+  \                          created_at:
+
+  \                            type: string
+
+  \                            format: date-time
+
+  \                          updated_at:
+
+  \                            type: string
+
+  \                            format: date-time
+
+  \                      school:
+
+  \                        type: object
+
+  \                        properties:
+
+  \                          id:
+
+  \                            type: string
+
+  \                            format: uuid
+
+  \                          name:
+
+  \                            type: string
+
+  \                            example: \"Escola PiCode\"
+
+  \                          schoolCode:
+
+  \                            type: integer
+
+  \                            example: 785465
+
+  \                            description: This code is unique for each
+  school
+
+  \                          created_at:
+
+  \                            type: string
+
+  \                            format: date-time
+
+  \                          updated_at:
+
+  \                            type: string
+
+  \                            format: date-time
+
+  \      /students:
+
+  \        post:
+
+  \          summary: Login in a student account
+
+  \         \ 
+
+  \          requestBody:
+
+  \              description: Optional description in *Markdown*
+
+  \              required: true
+
+  \              content:
+
+  \                application/json:
+
+  \                  schema:
+
+  \                    type: object
+
+  \                    properties:
+
+  \                      email:
+
+  \                        type: string
+
+  \                        format: email
+
+  \                      password:
+
+  \                        type: string
+
+  \                        example: \"123456\"
+
+  \          tags:
+
+  \            - students
+
+  \          responses:
+
+  \            '200':
+
+  \              description: A User object and his/her token
+
+  \              content:
+
+  \                application/json:
+
+  \                  schema:
+
+  \                    type: object
+
+  \                    properties:
+
+  \                      student:
+
+  \                        type: object
+
+  \                        properties:
+
+  \                          id:
+
+  \                            type: string
+
+  \                            format: uuid
+
+  \                          name:
+
+  \                            type: string
+
+  \                          email:
+
+  \                            type: string
+
+  \                            format: email
+
+  \                          class_id:
+
+  \                            type: string
+
+  \                            format: uuid
+
+  \                          birth_date:
+
+  \                            type: string
+
+  \                            format: date-time
+
+  \                          points:
+
+  \                            type: integer
+
+  \                          challenges_done:
+
+  \                            type: integer
+
+  \                          right_challenges:
+
+  \                            type: integer
+
+  \                          wrong_challenges:
+
+  \                            type: integer
+
+  \                          attemps:
+
+  \                            type: integer
+
+  \                          parent:
+
+  \                            type: string
+
+  \                          avatar:
+
+  \                            type: string
+
+  \                            example:
+  \"https://i.ibb.co/bg27n0w/Avatar-A01.png\"
+
+  \                          time_used:
+
+  \                            type: object
+
+  \                            properties:
+
+  \                              videos:
+
+  \                                type: integer
+
+  \                              challenges:
+
+  \                                type: integer
+
+  \                              pratice:
+
+  \                                type: integer
+
+  \                          created_at:
+
+  \                            type: string
+
+  \                            format: date-time
+
+  \                          updated_at:
+
+  \                            type: string
+
+  \                            format: date-time
+
+  \                      token:
+
+  \                        type: string
+
+  \                        example:
+  \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MTUzMDQyNzgsImV4cCI6MTYxNT\
+  M5MDY3OCwic3ViIjoiZjM1ZjgxNTUtNzE3MC00ZWYzLWIyZTItMWVkNDQyYzg2Njk5In0.dTX90ki\
+  wympZ6qTFWUMqPqLBwIu4A0N6HZ7gVyUJX0g\"
+
+  \                         \ 
 
   \    components:
 
   \      schemas:
 
-  \        BasicErrorModel:
+  \        CreateStudentModel:
 
   \          type: object
 
   \          required:
 
-  \            - message
+  \            - name
 
-  \            - code
+  \            - password
+
+  \            - classCode
+
+  \            - birth_date
+
+  \            - parent
 
   \          properties:
 
-  \            message:
+  \            name:
 
   \              type: string
 
-  \            code:
+  \            password:
+
+  \              type: string
+
+  \              minimum: \"6 caracteres\"
+
+  \            classCode:
 
   \              type: integer
 
-  \              minimum: 100
+  \            birth_date:
 
-  \              maximum: 600
+  \              type: string
 
-  \        ExtendedErrorModel:
+  \              format: date
 
-  \          allOf:     # Combines the BasicErrorModel and the inline model
+  \            parent:
 
-  \            - $ref: '#/components/schemas/BasicErrorModel'
+  \              type: string
 
-  \            - type: object
+  \              description: Name of a student responsible
 
-  \              required:
-
-  \                - rootCause
-
-  \              properties:
-
-  \                rootCause:
-
-  \                  type: string
+  \       \ 
 
   \        "
 contentType: yaml

@@ -1,25 +1,25 @@
-_id: req_807f780c90de4674a301d9b234112e80
+_id: req_wrk_a395de3ad290481583b4d87d02bf32d63125fc63
 type: Request
-parentId: fld_14cd1c96a3ba46df861118ac209fcd20
-modified: 1615680216154
-created: 1610044994474
-url: "{{ _.base_url }}/students/reset/2c4e6134-b4af-4bc3-8938-3bd621ad4365"
-name: Reset password
+parentId: fld_wrk_a395de3ad290481583b4d87d02bf32d6327a473b
+modified: 1615729791434
+created: 1615729791434
+url: "{{ base_url }}/students/create"
+name: Create a new student access
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"password": "novasenha"
+      "message": "string",
+      "code": 0
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_7a0e07989405402baf4a9a0e9fee148c
 authentication: {}
-metaSortKey: -1608744020940.5
+metaSortKey: -1615729791434
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

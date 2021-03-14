@@ -1,0 +1,21 @@
+_id: req_wrk_a395de3ad290481583b4d87d02bf32d6511c59ec
+type: Request
+parentId: fld_wrk_a395de3ad290481583b4d87d02bf32d6327a473b
+modified: 1615744764871
+created: 1615744764871
+url: "{{ base_url }}/students/class/{{ classCode }}"
+name: A quickly validation for class code
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1615744764871
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

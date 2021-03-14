@@ -1,25 +1,21 @@
-_id: req_8ea51b8b1cdb49efbb2473bb5c97fd4c
+_id: req_wrk_a395de3ad290481583b4d87d02bf32d6ca667fea
 type: Request
-parentId: fld_14cd1c96a3ba46df861118ac209fcd20
-modified: 1615745652673
-created: 1609688654077
-url: "{{ base_url }}/students/verify_class"
-name: Verify Class
+parentId: fld_wrk_a395de3ad290481583b4d87d02bf32d6327a473b
+modified: 1615746083188
+created: 1615746083188
+url: "{{ base_url }}/students"
+name: Login in a student account
 description: ""
-method: GET
+method: POST
 body:
   mimeType: application/json
-  text: |-
-    {
-    	"classCode": 407951
-    }
+  text: "{}"
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
-    id: pair_dcdf020b1dc14d7b8938515e02d2b9e4
 authentication: {}
-metaSortKey: -1608744020959.25
+metaSortKey: -1615746083188
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
